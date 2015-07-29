@@ -1,0 +1,11 @@
+<%= f.label :name, "Name" %> 
+	<%= f.text_field :name %> </br>
+
+	<%= f.label :age, "Age" %>
+	<%= f.text_field :age %> </br>
+
+	<%= f.label :cuteness, "Cuteness" %>
+	<%= f.select(:cuteness, @range_options) %> </br>
+
+	<%= f.label :softness, "Softess" %>
+	<%= f.select(:softness, @range_options) %> </br>

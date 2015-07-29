@@ -1,0 +1,9 @@
+<h1> Edit a Kitten </h1>
+
+<%= form_for(@kitten) do |f| %>
+	<%= render 'fields', f: f %>
+	<%= f.submit "Update Kitten", class:"btn btn-primary" %>
+	<%end%>
+</br>
+<%= link_to "All Kittens", root_path %>
+

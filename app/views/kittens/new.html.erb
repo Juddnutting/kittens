@@ -1,18 +1,7 @@
 <h1> Create a New Kitten </h1>
 
 <%= form_for @kitten do |f| %>
-	<%= f.label :name, "Name" %> 
-	<%= f.text_field :name %> </br>
-
-	<%= f.label :age, "Age" %>
-	<%= f.text_field :age %> </br>
-
-	<%= f.label :cuteness, "Cuteness" %>
-	<%= f.select(:cuteness, @range_options) %> </br>
-
-	<%= f.label :softness, "Softess" %>
-	<%= f.select(:softness, @range_options) %> </br>
-
+	<%= render 'fields', f: f %>
 	<%= f.submit "Create Kitten" %>
 
 	<%end%>
